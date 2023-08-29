@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <title>Maps Project</title>
+
+    <!-- Include PapaParse library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+    <style>
+
+        #map {
+            height: 784px;
+            width: 1366px;
+            margin: 2rem auto;
+        }
+
+        .checkbox-container {
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    background-color: rgb(0, 0, 0);
+    padding: 55px;
+    border-radius: 20px;
+    z-index: 1000; /* Ensure the container is above the map */
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: right; /* Align items vertically within the container */
+}
+
+</style>
+
+
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="checkbox-container">
+
+    <div id="checkboxes" style="position: absolute; bottom: 25px; left: 10px;">
+        <input type="checkbox" id="FatalCheckbox" checked>
+        <label for="FatalCheckbox"><font color="#FFFFFF">Fatal</font></label><br>
+        <input type="checkbox" id="InjuredCheckbox" checked>
+        <label for="InjuredCheckbox"><font color="#FFFFFF">Injured</font></label><br>
+        <input type="checkbox" id="UninjuredCheckbox" checked>
+        <label for="UninjuredCheckbox"><font color="#FFFFFF">Uninjured</label></font></label>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
